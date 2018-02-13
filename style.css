@@ -11,3 +11,49 @@
  Tags:         two-columns, one-column, flexible-header, left-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, theme-options, entertainment, sticky-post, threaded-comments, translation-ready, blog, news, editor-style, rtl-language-support
  Text Domain:  sungit-lite-stocherkahn
 */
+
+/* General modifications */
+a {
+    color: #bb0000;
+}
+
+/* Homepage header modifications */
+.block, .home-banner .sl-btn {
+    display:none;
+}
+.site-branding {
+    z-index: 1;
+}
+.home-banner .slider-item:before {
+    background: linear-gradient(-60deg, transparent 64%, transparent 64%), linear-gradient(to bottom, rgba(0,0,0,50), #000000);
+}
+
+/* Brand modifications */
+.sl-header-sec .nav-wrapper .navbar:before {
+    background: linear-gradient(to right, #aa0000, #bb0000);
+}
+.sl-header-sec .nav-wrapper .navbar:after {
+    border-top-color: #bb0000;
+    border-left-color: #bb0000;
+    box-shadow: -2px 0 0 #bb0000;
+}
+
+/* Navigation modifications */
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
+    border-top-color: #bb0000;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #bb0000 !important;
+}
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
+    color: #bb0000;
+}
+
+/* Highlight element modifications */
+.sl-event ul .sl-btn, .sl-event ul .comment-respond .comment-form input[type="submit"], .comment-respond .comment-form .sl-event ul input[type="submit"], .sl-event ul .comments-area .reply a, .comments-area .reply .sl-event ul a {
+    background: #bb0000;
+    border-color: #bb0000;
+}
+.blog-post-wrapper .blog-desc-wrap .blog-date {
+    background: #bb0000;
+}
