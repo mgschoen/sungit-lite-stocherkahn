@@ -31,11 +31,14 @@ a {
 /* Brand modifications */
 .sl-header-sec .nav-wrapper .navbar:before {
     background: linear-gradient(to right, #aa0000, #bb0000);
+    display: table;
+    min-width: 313px;
 }
 .sl-header-sec .nav-wrapper .navbar:after {
     border-top-color: #bb0000;
     border-left-color: #bb0000;
     box-shadow: -2px 0 0 #bb0000;
+    display: table;
 }
 
 /* Navigation modifications */
@@ -49,6 +52,12 @@ a {
     color: #bb0000;
 }
 
+.sl-header-sec .nav-wrapper .navbar .site-branding {
+    text-align: left;
+    top: 2%;
+    left: 3%;
+}
+
 /* Highlight element modifications */
 .sl-event ul .sl-btn, .sl-event ul .comment-respond .comment-form input[type="submit"], .comment-respond .comment-form .sl-event ul input[type="submit"], .sl-event ul .comments-area .reply a, .comments-area .reply .sl-event ul a {
     background: #bb0000;
@@ -56,4 +65,29 @@ a {
 }
 .blog-post-wrapper .blog-desc-wrap .blog-date {
     background: #bb0000;
+}
+
+@media (max-width: 1252px) {
+
+    .sl-header-sec .nav-wrapper .navbar:after {
+        left: 313px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sl-header-sec .nav-wrapper .navbar:before,
+    .sl-header-sec .nav-wrapper .navbar:after {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        width: auto;
+    }
+
 }

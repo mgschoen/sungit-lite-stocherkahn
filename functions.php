@@ -3,12 +3,12 @@
 // Enqueue styles as suggested in https://codex.wordpress.org/Child_Themes
 function my_theme_enqueue_styles() {
 
-    $parent_style = 'sungit-lite-allstyles';
+    $parent_style = array( 'sungit-lite-fonts', 'sungit-lite-style', 'sungit-lite-allstyles' );
 
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/assets/css/sungit-lite.css' );
+    //wp_enqueue_style( $parent_style[2], get_template_directory_uri() . '/assets/css/sungit-lite.css' );
     wp_enqueue_style( 'sungit-lite-stocherkahn-style',
         get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style ),
+        $parent_style,
         wp_get_theme()->get('Version')
     );
 }
