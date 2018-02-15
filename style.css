@@ -75,6 +75,12 @@ a {
     background: #bb0000;
 }
 
+/* News section modifications */
+.blog-post-wrapper .blog-post-slide:hover:before {
+    background: rgba(0,0,0,0.3);
+    opacity: 1;
+}
+
 @media (max-width: 1252px) {
     .sl-header-sec .nav-wrapper .navbar:after {
         left: 313px;
