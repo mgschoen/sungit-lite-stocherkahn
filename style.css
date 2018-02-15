@@ -5,7 +5,7 @@
  Author:       Martin Schön
  Author URI:   http://argonn.me
  Template:     sungit-lite
- Version:      1.0.3
+ Version:      1.0.4
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         two-columns, one-column, flexible-header, left-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, theme-options, entertainment, sticky-post, threaded-comments, translation-ready, blog, news, editor-style, rtl-language-support
@@ -40,6 +40,11 @@ a {
     box-shadow: -2px 0 0 #bb0000;
     display: table;
 }
+.sl-header-sec .nav-wrapper .navbar .site-branding {
+    text-align: left;
+    top: 2%;
+    left: 3%;
+}
 
 /* Social nav modifications */
 .social-nav a.in-link {
@@ -47,20 +52,18 @@ a {
 }
 
 /* Navigation modifications */
-.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu,
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu:hover {
     border-top-color: #bb0000;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu,
+.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu li > a:hover,
+.sl-header-sec .nav-wrapper .navbar .nav li > a:hover,
+.fallback_menu_default li a:hover {
     color: #bb0000 !important;
-}
-.sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
-    color: #bb0000;
-}
-
-.sl-header-sec .nav-wrapper .navbar .site-branding {
-    text-align: left;
-    top: 2%;
-    left: 3%;
 }
 
 /* Highlight element modifications */
@@ -73,26 +76,20 @@ a {
 }
 
 @media (max-width: 1252px) {
-
     .sl-header-sec .nav-wrapper .navbar:after {
         left: 313px;
     }
-
 }
 
 @media only screen and (max-width: 767px) {
-
     .sl-header-sec .nav-wrapper .navbar:before,
     .sl-header-sec .nav-wrapper .navbar:after {
         display: none;
     }
-
 }
 
 @media (min-width: 768px) {
-
     .container {
         width: auto;
     }
-
 }
