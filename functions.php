@@ -27,25 +27,25 @@ function sungit_lite_social_icons(){
     $email = $sungit_lite_theme_options['email'];
     ob_start();
             if(!empty($facebook)): ?>
-                 <li><a href="<?php echo esc_url($facebook); ?>" title=<?php echo esc_attr__("Follow us on Facebook", "sungit-lite");?> class="fb-link"><span class="fa fa-facebook"></span></a></li>
+                 <li><a href="<?php echo esc_url($facebook); ?>" title=<?php echo esc_attr__("Facebook", "sungit-lite");?> class="fb-link"><span class="fa fa-facebook"></span></a></li>
             <?php endif;
             if(!empty($gplus)): ?>
-                <li><a href="<?php echo esc_url($gplus); ?>" title=<?php echo esc_attr__("Follow us on Google Plus", "sungit-lite");?> class="gp-link"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="<?php echo esc_url($gplus); ?>" title=<?php echo esc_attr__("Google Plus", "sungit-lite");?> class="gp-link"><span class="fa fa-google-plus"></span></a></li>
             <?php endif;
             if(!empty($linkedin)):?>
-                <li><a href="<?php echo esc_url($linkedin); ?>" title=<?php echo esc_attr__("Follow us on Linkedin", "sungit-lite");?> class="ln-link"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="<?php echo esc_url($linkedin); ?>" title=<?php echo esc_attr__("Linkedin", "sungit-lite");?> class="ln-link"><span class="fa fa-linkedin"></span></a></li>
             <?php endif;
             if(!empty($twitter)):?>
-                <li><a href="<?php echo esc_url($twitter); ?>" title=<?php echo esc_attr__("Follow us on Twitter", "sungit-lite");?> class="tw-link"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="<?php echo esc_url($twitter); ?>" title=<?php echo esc_attr__("Twitter", "sungit-lite");?> class="tw-link"><span class="fa fa-twitter"></span></a></li>
             <?php endif;
             if(!empty($instagram)):?>
-                <li><a href="<?php echo esc_url($instagram); ?>" title=<?php echo esc_attr__("Follow us on Instagram", "sungit-lite");?> class="in-link"><span class="fa fa-instagram"></span></a></li>
+                <li><a href="<?php echo esc_url($instagram); ?>" title=<?php echo esc_attr__("Instagram", "sungit-lite");?> class="in-link"><span class="fa fa-instagram"></span></a></li>
             <?php endif;
             if(!empty($tumblr)):?>
-                <li><a href="<?php echo esc_url($tumblr); ?>" title=<?php echo esc_attr__("Follow us on Tumblr", "sungit-lite");?> class="ln-link"><span class="fa fa-tumblr"></span></a></li>
+                <li><a href="<?php echo esc_url($tumblr); ?>" title=<?php echo esc_attr__("Tumblr", "sungit-lite");?> class="ln-link"><span class="fa fa-tumblr"></span></a></li>
             <?php endif;
             if(!empty($pinterest)):?>
-                <li><a href="<?php echo esc_url($pinterest); ?>" title=<?php echo esc_attr__("Follow us on Pinterest", "sungit-lite");?> class="in-link"><span class="fa fa-pinterest"></span></a></li>
+                <li><a href="<?php echo esc_url($pinterest); ?>" title=<?php echo esc_attr__("Pinterest", "sungit-lite");?> class="in-link"><span class="fa fa-pinterest"></span></a></li>
             <?php endif;
             if(!empty($email)):?>
                  <li><a href=<?php echo '"mailto:' . sanitize_email($email) . '"'; ?> title="Kontaktiere uns per Mail" class="in-link"><?php echo sanitize_email($email) ?></a></li>
