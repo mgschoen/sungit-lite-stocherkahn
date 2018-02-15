@@ -5,7 +5,7 @@
  Author:       Martin Schön
  Author URI:   http://argonn.me
  Template:     sungit-lite
- Version:      1.0.4
+ Version:      1.0.5
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         two-columns, one-column, flexible-header, left-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, theme-options, entertainment, sticky-post, threaded-comments, translation-ready, blog, news, editor-style, rtl-language-support
@@ -91,6 +91,9 @@ a {
     .sl-header-sec .nav-wrapper .navbar:before,
     .sl-header-sec .nav-wrapper .navbar:after {
         display: none;
+    }
+    .home-banner .slider-item .slider-text-wrapper h2 {
+        font-size: 48px;
     }
 }
 
