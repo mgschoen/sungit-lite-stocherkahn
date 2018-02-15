@@ -41,6 +41,11 @@ a {
     display: table;
 }
 
+/* Social nav modifications */
+.social-nav a.in-link {
+    font-size: 12px;
+}
+
 /* Navigation modifications */
 .sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
     border-top-color: #bb0000;
