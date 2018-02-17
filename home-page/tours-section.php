@@ -12,6 +12,7 @@ if(!empty($tour_category)):
         );
     $query = new WP_query($args);
     if($query->have_posts()): ?>
+        <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="sl-event">
                 <ul>

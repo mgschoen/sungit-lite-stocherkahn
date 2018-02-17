@@ -69,7 +69,10 @@ a {
     color: #bb0000 !important;
 }
 
-/* Highlight element modifications */
+/* Mid section modifications */
+.sl-event {
+    margin-left: 0;
+}
 .sl-event ul .sl-btn, .sl-event ul .comment-respond .comment-form input[type="submit"], .comment-respond .comment-form .sl-event ul input[type="submit"], .sl-event ul .comments-area .reply a, .comments-area .reply .sl-event ul a {
     background: #bb0000;
     border-color: #bb0000;
