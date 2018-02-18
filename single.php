@@ -14,7 +14,8 @@ $inner_banner = (!empty($header_image)?$header_image:''); ?>
 <div class="inner-banner-wrap" <?php if ($inner_banner) { ?>style="background-image: url(<?php echo esc_url($inner_banner) ?>)"<?php } ?>>
     <div class="container">
         <div class="row">
-            <div class="inner-banner-content">
+            <div class="col-md-2"></div>
+            <div class="inner-banner-content col-md-8">
                 <?php if(is_archive()): ?>
                   <h2><?php the_archive_title(); ?></h2>
                     <?php elseif (is_front_page()): ?>
