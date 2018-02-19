@@ -13,9 +13,10 @@
  */
 
 get_header();
+while ( have_posts() ) : the_post();
+$thumbnail = get_the_post_thumbnail_url();
 $header_image = get_header_image();
-$inner_banner = (!empty($header_image)?$header_image:'');
-while ( have_posts() ) : the_post(); ?>
+$inner_banner = (!empty($thumbnail)?$thumbnail:(!empty($header_image)?$header_image:'')); ?>
 <!-- Heading -->
 <div class="inner-banner-wrap" <?php if ($inner_banner) { ?>style="background-image: url(<?php echo esc_url($inner_banner) ?>)"<?php } ?>>
     <div class="container">

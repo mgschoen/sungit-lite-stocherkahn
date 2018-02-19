@@ -93,6 +93,9 @@ a {
 }
 
 /* Page and post header modifications */
+.inner-banner-wrap {
+    background-position: center;
+}
 .inner-banner-content h2 {
     font-size: 42px;
     letter-spacing: 3px;

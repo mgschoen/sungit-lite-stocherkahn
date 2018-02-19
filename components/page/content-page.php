@@ -10,14 +10,6 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class('post-content-wrap'); ?>>
-	<?php if ( '' != get_the_post_thumbnail() ) : ?>
-		<div class="image-post">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'yudleethemes-featured-image' ); ?>
-			</a>
-		</div>
-	<?php endif; ?>
-	
 	<div class="post-content">
 		<!--h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2-->
 		<div class="post-desc">
