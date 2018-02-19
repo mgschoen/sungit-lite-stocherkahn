@@ -71,4 +71,30 @@ if ($wp_customize) {
       ));
 }
 
+// Load Roboto font in addition
+function sungit_lite_fonts_url() {
+    $fonts_url = '';
+    $fonts     = array();
+
+    if ( 'off' !== _x( 'on', 'Anton font: on or off', 'sungit-lite' ) ) {
+        $fonts[] = 'Anton';
+    }
+
+    if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'sungit-lite' ) ) {
+        $fonts[] = 'Poppins';
+    }
+
+    if ( 'off' !== _x( 'on', 'Roboto font: on or off', 'sungit-lite' ) ) {
+        $fonts[] = 'Roboto';
+    }
+
+    if ( $fonts ) {
+        $fonts_url = add_query_arg( array(
+            'family' => urlencode( implode( '|', $fonts ) ),
+        ), '//fonts.googleapis.com/css' );
+    }
+
+    return $fonts_url;
+}
+
 ?>
