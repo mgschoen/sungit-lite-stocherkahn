@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <h3><?php echo esc_html__('Theme by', 'sungit-lite'); ?></h3>
-            <p class="copyright"><a href="<?php echo esc_url('https://yudleethemes.com');?>"><?php echo ' '.esc_html__('Yudlee Themes', 'sungit-lite'); ?></a></p>
+            <p class="copyright"><a href="<?php echo esc_url('https://yudleethemes.com');?>"><?php echo ' '.esc_html__('Yudlee Themes', 'sungit-lite'); ?></a> | <a href="https://github.com/mgschoen">mgschoen</a></p>
         </div>
     </div>
 </div>
