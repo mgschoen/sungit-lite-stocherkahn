@@ -64,5 +64,3 @@ if(!empty($slider_page_id_1) || !empty($slider_page_id_2) || !empty($slider_page
         </div>
     <?php endif;
 endif;
-
-echo var_dump($sungit_lite_theme_options); ?>
