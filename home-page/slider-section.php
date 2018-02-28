@@ -1,4 +1,11 @@
 <?php
+
+function sk_sec_remaining() {
+    $start_time = new DateTime('2018-02-28 1:00:00');
+    $now = new DateTime();
+    return $start_time->format('U') - $now->format('U');
+}
+
 $sungit_lite_theme_options = sungit_lite_theme_options();
 $slider_page_id_1 = absint($sungit_lite_theme_options['slider_page_id_1']);
 $slider_page_id_2 = absint($sungit_lite_theme_options['slider_page_id_2']);
@@ -32,12 +39,10 @@ if(!empty($slider_page_id_1) || !empty($slider_page_id_2) || !empty($slider_page
                             </div>
                             </div>
                             <?php the_title( '<h2>', '</h2>' ); ?>
-                            <div class="sk-counter">
+                            <script src="<?php echo get_stylesheet_directory_uri() . '/assets/js/sk-counter.js'; ?>"></script>
+                            <div class="sk-counter" data-remaining="<?php echo sk_sec_remaining(); ?>">
                                 <p class="sk-counter-overline">Noch</p>
-                                <p class="sk-counter-display">
-                                    <span id="sk-counter-days">61</span> Tage und
-                                    <span id="sk-counter-hrs">23</span>:<span id="sk-counter-min">17</span>:<span id="sk-counter-sec">24</span> Stunden
-                                </p>
+                                <p class="sk-counter-display"></p>
                                 <p class="sk-counter-underline">bis zum Startschuss</p>
                             </div>
                         </div>
