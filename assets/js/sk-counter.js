@@ -22,8 +22,9 @@
 
         } else {
 
+            var expireMessage = $('.sk-counter')[0].getAttribute('data-expire-message');
             $('.sk-counter-overline').text('');
-            $('.sk-counter-display').text('Der Startschuss ist gefallen!');
+            $('.sk-counter-display').text(expireMessage);
             $('.sk-counter-underline').text('');
 
         }

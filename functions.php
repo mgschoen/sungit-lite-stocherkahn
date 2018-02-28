@@ -55,8 +55,10 @@ function sungit_lite_social_icons(){
 }
 add_action( 'sungit_lite_social_function', 'sungit_lite_social_icons' );
 
-// Add E-Mail field to customizer social options
+// Additional fields for customizer
 if ($wp_customize) {
+
+  // Add E-Mail field to customizer social options
   $wp_customize->add_setting('sungit_lite_option[email]',array(
       'type'              => 'option',
       'default'           => '',
@@ -68,7 +70,55 @@ if ($wp_customize) {
       'section'  => 'sungit_lite_social_option',
       'settings' => 'sungit_lite_option[email]',
       'type'     => 'text'
+  ));
+
+  // Add counter section to customizer
+  $wp_customize->add_section('sungit_lite_counter_option',array(
+      'title'    => __('Counter Options','sungit-lite'),
+      'panel'    => 'sungit_lite_theme_option',
+      'priority' => 5,
+  ));
+
+  $wp_customize->add_setting('sungit_lite_option[counter_show]',
+    array(
+      'type'              => 'option',
+      'default'           => true
+  ));
+  $wp_customize->add_control('counter_show',
+    array(
+      'type'    => 'checkbox',
+      'section'  => 'sungit_lite_counter_option',
+      'label'    => esc_html__('Show counter in slider section','sungit-lite'),
+      'settings' => 'sungit_lite_option[counter_show]'
+  ));
+
+  $wp_customize->add_setting('sungit_lite_option[counter_expires]',
+      array(
+        'type'              => 'option',
+        'default'           => '2018-05-31T14:00:00+01:00'
+    ));
+    $wp_customize->add_control('counter_expires',
+      array(
+        'type'    => 'text',
+        'section'  => 'sungit_lite_counter_option',
+        'label'    => esc_html__('Date of expiration','sungit-lite'),
+        'settings' => 'sungit_lite_option[counter_expires]'
+    ));
+
+    $wp_customize->add_setting('sungit_lite_option[counter_expire_message]',
+        array(
+          'type'              => 'option',
+          'default'           => 'Der Startschuss ist gefallen!',
+          'sanitize_callback' => 'sanitize_text_field'
       ));
+  $wp_customize->add_control('counter_expire_message',
+    array(
+      'type'    => 'text',
+      'section'  => 'sungit_lite_counter_option',
+      'label'    => 'Expiration message',
+      'description'    => esc_html__('Custom message to show when counter expires','sungit-lite'),
+      'settings' => 'sungit_lite_option[counter_expire_message]'
+  ));
 }
 
 // Load Roboto font in addition
