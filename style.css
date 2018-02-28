@@ -5,7 +5,7 @@
  Author:       Martin Schön
  Author URI:   http://argonn.me
  Template:     sungit-lite
- Version:      1.0.10
+ Version:      1.0.11
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         two-columns, one-column, flexible-header, left-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, theme-options, entertainment, sticky-post, threaded-comments, translation-ready, blog, news, editor-style, rtl-language-support
@@ -26,7 +26,7 @@ a {
 }
 
 /* Homepage header modifications */
-.block, .home-banner .sl-btn {
+.block {
     display:none;
 }
 .site-branding {
@@ -34,6 +34,37 @@ a {
 }
 .home-banner .slider-item:before {
     background: linear-gradient(-60deg, transparent 64%, transparent 64%), linear-gradient(to bottom, rgba(0,0,0,50), #000000);
+}
+
+/* Homepage counter extension */
+.sk-counter {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Anton";
+    text-transform: uppercase;
+    text-shadow: 0 0 30px black;
+    border-radius: 0;
+}
+.home-banner .slider-item .sk-counter p {
+    line-height: 26px;
+    margin: 5px auto;
+}
+.sk-counter p.sk-counter-display {
+    letter-spacing: 3px;
+}
+.sk-counter p.sk-counter-overline, .sk-counter p.sk-counter-underline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.sk-counter p.sk-counter-overline {
+    border-bottom: 1px solid white;
+}
+.sk-counter p.sk-counter-underline {
+    border-top: 1px solid white;
 }
 
 /* Brand modifications */
