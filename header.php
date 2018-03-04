@@ -14,6 +14,23 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+    // Insert meta description
+    $default_description = "Alle Informationen und Neuigkeiten zum Stocherkahnrennen 2018";
+    //if single post then add excerpt as meta description
+    if (is_single()) {
+        $excerpt = strip_tags(get_the_excerpt($post->ID));
+        if ($excerpt == "") {
+            $excerpt = $default_description;
+        }
+?>
+<meta name="description" content="<?php echo $excerpt; ?>" />
+<?php
+    //if homepage use standard meta description
+    } else if(is_home() || is_page())  {
+?>
+<meta name="description" content="<?php echo $default_description; ?>">
+<?php } ?>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
