@@ -6,7 +6,7 @@
                 <?php if ( is_active_sidebar( 'prefooter-1' ) ) { ?>
                     <div class="col-md-4">
                         <?php dynamic_sidebar('prefooter-1' );?>
-                        <ul class="social-nav">
+                        <ul class="contact-nav">
                             <?php do_action( 'sungit_lite_social_function'); ?>
                         </ul>
                     </div>

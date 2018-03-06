@@ -5,7 +5,7 @@
  Author:       Martin Schön
  Author URI:   http://argonn.me
  Template:     sungit-lite
- Version:      1.0.13
+ Version:      1.0.14
  License:      GNU General Public License v3 or later
  License URI:  http://www.gnu.org/licenses/gpl-3.0.html
  Tags:         two-columns, one-column, flexible-header, left-sidebar, custom-background, custom-header, custom-menu, custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, post-formats, theme-options, entertainment, sticky-post, threaded-comments, translation-ready, blog, news, editor-style, rtl-language-support
@@ -86,9 +86,27 @@ a {
 }
 
 /* Social nav modifications */
-.social-nav a.in-link {
+.contact-nav a.mail-link {
     font-size: 12px;
 }
+.sl-header-sec .contact-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    min-height: 39px; }
+.sl-header-sec .contact-nav li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 39px; }
+.prefooter .contact-nav {
+    padding: 0;
+    margin: 10px 0 0 0;
+    list-style: none; }
+.prefooter .contact-nav li {
+    display: inline-block;
+    margin-right: 10px; }
 
 /* Navigation modifications */
 .sl-header-sec .nav-wrapper .navbar ul.dropdown-menu,
@@ -212,6 +230,11 @@ figure.wp-caption img[class*="wp-image-"] {
     .sl-header-sec .nav-wrapper .navbar:after {
         left: 313px;
     }
+}
+
+@media only screen and (max-width: 989px) {
+    .prefooter .contact-nav {
+        margin-bottom: 35px; }
 }
 
 @media only screen and (max-width: 767px) {

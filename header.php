@@ -43,7 +43,7 @@
 	<header class="sl-header-sec">
     <div class="top-header">
             <div class="container">
-                <ul class="social-nav header-top-left">
+                <ul class="contact-nav header-top-left">
                     <?php do_action( 'sungit_lite_social_function'); ?>
                 </ul>
             </div>

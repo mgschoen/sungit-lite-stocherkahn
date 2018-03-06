@@ -48,7 +48,7 @@ function sungit_lite_social_icons(){
                 <li><a href="<?php echo esc_url($pinterest); ?>" title=<?php echo esc_attr__("Pinterest", "sungit-lite");?> class="in-link"><span class="fa fa-pinterest"></span></a></li>
             <?php endif;
             if(!empty($email)):?>
-                 <li><a href=<?php echo '"mailto:' . sanitize_email($email) . '"'; ?> title="Kontaktiere uns per Mail" class="in-link"><?php echo sanitize_email($email) ?></a></li>
+                 <li><a href=<?php echo '"mailto:' . sanitize_email($email) . '"'; ?> title="Kontaktiere uns per Mail" class="mail-link"><?php echo sanitize_email($email) ?></a></li>
              <?php endif;
     echo ob_get_clean();
 
